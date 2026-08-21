@@ -7,8 +7,12 @@ def get_user_input():
 
 def get_season_advice(season):
     """Return gardening advice based on the season."""
-    if season == "summer":
+    if season == "spring":
+        return "Prepare the soil and start planting new seeds.\n"
+    elif season == "summer":
         return "Water your plants regularly and provide some shade.\n"
+    elif season == "autumn":
+        return "Clear fallen leaves and prepare plants for colder weather.\n"
     elif season == "winter":
         return "Protect your plants from frost with covers.\n"
     else:
