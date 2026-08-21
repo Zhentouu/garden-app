@@ -31,12 +31,16 @@ def get_plant_advice(plant_type):
 
 def main():
     """Run the gardening advice program."""
+
+    # Get the season and plant type from the user
     season, plant_type = get_user_input()
 
+    # Build the gardening advice from the user's choices
     advice = ""
     advice += get_season_advice(season)
     advice += get_plant_advice(plant_type)
 
+    # Display the completed advice
     print(advice)
 
 
